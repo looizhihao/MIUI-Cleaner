@@ -1,0 +1,105 @@
+this will remove your data or may cause your phone to brick
+proceed with care
+steps:
+1) turn on developer options
+2) developer options > enable usb debugging 
+3) plug in device to pc 
+4) install USB drivers for your phone, refer: https://developer.android.com/studio/run/oem-usb
+5) download and install adb, refer:  https://forum.xda-developers.com/t/tool-minimal-adb-and-fastboot-2-9-18.2317790/
+6) open a terminal in the installation folder
+string in [] are the commands to type in the terminal
+7) [adb devices] - to verify device is detected
+8) [adb shell] - to login in to device's shell
+9) [pm list packages] - to check what package are available 
+10) copy the list below into the terminal to remove all useless packages 
+
+
+
+pm uninstall -k --user 0 com.miui.analytics	
+pm uninstall -k --user 0 com.miui.analytics	
+pm uninstall -k --user 0 com.xiaomi.mipicks	
+pm uninstall -k --user 0 com.miui.msa.global	
+pm uninstall -k --user 0 com.miui.cloudservice
+pm uninstall -k --user 0 com.miui.cloudbackup	
+pm uninstall -k --user 0 com.miui.cloudservice.sysbase
+pm uninstall -k --user 0 com.miui.backup	
+pm uninstall -k --user 0 com.xiaomi.glgm	
+pm uninstall -k --user 0 com.xiaomi.payment
+pm uninstall -k --user 0 com.mipay.wallet.in	
+pm uninstall -k --user 0 com.tencent.soter.soterserver	
+pm uninstall -k --user 0 cn.wps.xiaomi.abroad.lite	
+pm uninstall -k --user 0 com.miui.videoplayer	
+pm uninstall -k --user 0 com.miui.player	
+pm uninstall -k --user 0 com.mi.globalbrowser	
+pm uninstall -k --user 0 com.xiaomi.midrop	
+pm uninstall -k --user 0 com.miui.yellowpage	
+pm uninstall -k --user 0 com.miui.android.fashiongallery
+pm uninstall -k --user 0 com.miui.bugreport
+pm uninstall -k --user 0 com.miui.miservice	
+pm uninstall -k --user 0 com.miui.weather2	
+pm uninstall -k --user 0 com.miui.hybrid 
+pm uninstall -k --user 0 com.miui.hybrid.accessory	
+pm uninstall -k --user 0 com.miui.global.packageinstaller	
+pm uninstall -k --user 0 com.xiaomi.joyose	
+pm uninstall -k --user 0 com.miui.compass
+pm uninstall -k --user 0 com.miui.screenrecorder
+
+pm uninstall -k --user 0 com.xiaomi.scanner
+pm uninstall -k --user 0 com.android.calculator
+pm uninstall -k --user 0 com.miui.calculator
+pm uninstall -k --user 0 com.android.soundrecorder
+pm uninstall -k --user 0 com.mi.android.globalFileexplorer
+pm uninstall -k --user 0 com.xiaomi.calender
+pm uninstall -k --user 0 com.miui.fm
+pm uninstall -k --user 0 com.miui.fmservice
+pm uninstall -k --user 0 com.miui.notes
+
+pm uninstall -k --user 0 com.miui.qr
+pm uninstall -k --user 0 com.miui.miwallpaper
+pm uninstall -k --user 0 com.miui.face
+pm uninstall -k --user 0 com.miui.smsextra
+pm uninstall -k --user 0 com.miui.systemui.carriers.overlay
+pm uninstall -k --user 0 com.miui.touchassistant
+pm uninstall -k --user 0 com.miui.wmsvc
+pm uninstall -k --user 0 com.miui.freeform
+pm uninstall -k --user 0 com.miui.misound
+pm uninstall -k --user 0 com.miui.micloudsync
+
+
+pm uninstall -k --user 0 com.netflix.partner.activation
+pm uninstall -k --user 0 com.zhiliaoapp.musically
+pm uninstall -k --user 0 ru.yandex.searchplugin	
+pm uninstall -k --user 0 com.yandex.zen	
+pm uninstall -k --user 0 com.ebay.mobile 
+pm uninstall -k --user 0 com.ebay.carrier	
+pm uninstall -k --user 0 ru.ozon.app.android	
+pm uninstall -k --user 0 com.alibaba.aliexpresshd	
+pm uninstall -k --user 0 sg.bigo.live	
+pm uninstall -k --user 0 ru.auto.ara
+
+
+pm uninstall -k --user 0 com.android.browser
+pm uninstall -k --user 0 com.android.wallpaper.livepicker
+pm uninstall -k --user 0 com.android.dreams.basic
+pm uninstall -k --user 0 com.android.dreams.phototable
+pm uninstall -k --user 0 com.android.providers.downloads.ui
+
+
+pm uninstall -k --user 0 com.google.android.gms.location.history	
+pm uninstall -k --user 0 com.google.android.videos	
+pm uninstall -k --user 0 com.google.android.music	
+pm uninstall -k --user 0 com.google.android.apps.photos	
+pm uninstall -k --user 0 com.google.android.youtube	
+pm uninstall -k --user 0 com.google.android.apps.tachyon	
+pm uninstall -k --user 0 com.google.ar.lens	
+pm uninstall -k --user 0 com.google.android.googlequicksearchbox
+pm uninstall -k --user 0 com.google.android.apps.wellbeing	
+pm uninstall -k --user 0 com.google.android.apps.googleassistant
+pm uninstall -k --user 0 com.google.android.apps.docs
+
+
+
+pm uninstall -k --user 0 com.facebook.katana
+pm uninstall -k --user 0 com.facebook.services
+pm uninstall -k --user 0 com.facebook.system
+pm uninstall -k --user 0 com.facebook.appmanager
